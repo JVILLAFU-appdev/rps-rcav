@@ -1,0 +1,17 @@
+<h2>We played rock!</h2>
+
+<% comp_move = ["rock","paper","scissors"].sample %>
+
+<h2>
+They played <%= comp_move %>! 
+</h2>
+
+<% if comp_move == "rock" %>
+<% outcome = "We tied" %>
+<% elsif comp_move == "scissors" %> 
+<% outcome = "We won" %>
+<% elsif comp_move == "paper" %>
+<% outcome = "We lost" %>
+<% end %>
+
+<h2><%= outcome %>!</h2>
